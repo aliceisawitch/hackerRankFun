@@ -14,8 +14,8 @@ using System.Text;
 
 /*
     It's New Year's Day and everyone's in line for the Wonderland rollercoaster ride! There are a number of people queued up,
-    and each person wears a sticker indicating their initial position in the queue. Initial positions increment by  from  at 
-    the front of the line to  at the back.
+    and each person wears a sticker indicating their initial position in the queue. Initial positions increment by  from 1 at 
+    the front of the line to n at the back.
 */
 namespace newYearChaos2._0
 {
@@ -23,7 +23,11 @@ namespace newYearChaos2._0
     {
         static void minimumBribes(int[] q)
         {
-
+            int[] initialQ = new int [q.Length];
+            for (int i = 0; i < initialQ.Length; i++){
+                initialQ[i] = i+1;
+            }
+            Console.WriteLine("initialQ: [{0}]" , string.Join(", ", initialQ));
 
         }
 
